@@ -14,6 +14,57 @@ export type Database = {
   }
   public: {
     Tables: {
+      hospital_profiles: {
+        Row: {
+          address: string
+          blood_groups_available: string[] | null
+          capacity: number | null
+          contact_person: string
+          created_at: string | null
+          email: string
+          hospital_name: string
+          id: string
+          is_available: boolean | null
+          latitude: number
+          longitude: number
+          phone: string
+          specialties: string[] | null
+          updated_at: string | null
+        }
+        Insert: {
+          address: string
+          blood_groups_available?: string[] | null
+          capacity?: number | null
+          contact_person: string
+          created_at?: string | null
+          email: string
+          hospital_name: string
+          id?: string
+          is_available?: boolean | null
+          latitude: number
+          longitude: number
+          phone: string
+          specialties?: string[] | null
+          updated_at?: string | null
+        }
+        Update: {
+          address?: string
+          blood_groups_available?: string[] | null
+          capacity?: number | null
+          contact_person?: string
+          created_at?: string | null
+          email?: string
+          hospital_name?: string
+          id?: string
+          is_available?: boolean | null
+          latitude?: number
+          longitude?: number
+          phone?: string
+          specialties?: string[] | null
+          updated_at?: string | null
+        }
+        Relationships: []
+      }
       profiles: {
         Row: {
           blood_group: string | null
